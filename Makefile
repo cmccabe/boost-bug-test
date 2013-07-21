@@ -1,5 +1,5 @@
-CC=g++
-CFLAGS=-g -O0 -Wall -Wextra #-std=c++0x
+CC=clang++
+CFLAGS=-fsanitize=thread -g -O0 -fPIE -pie -Wall -Wextra #-std=c++0x
 #BOOST_INSTALL_DIR=/opt/boost_1_54_0/
 BOOST_INSTALL_DIR=/usr
 
